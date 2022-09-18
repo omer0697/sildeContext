@@ -1,24 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import "./main.css"
+import Header from "./Components/Header";
+import Bar from "./Components/Bar";
+import { useState } from "react";
+
 
 function App() {
+  // features = {
+  //   display:"none" , right:0,
+  // }
+  const [showside,setShowside] = useState("none");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <div className="container" style={showside==="block" ? {gridTemplateColumns: "220px auto"} : {gridTemplateColumns: "15px auto"}}>
+      <Header showside={showside} setShowside={setShowside}></Header>
+      <Bar showside={showside} setShowside={setShowside}></Bar>
+      <div className="item3">
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+        <h1>semih</h1>
+      </div>
     </div>
+    
+    
   );
 }
 
